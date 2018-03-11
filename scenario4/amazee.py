@@ -29,8 +29,7 @@ for row in txtfile:
 		imgcontent=urllib.request.urlretrieve(imgurl,imgname)
 		# move the image to the img folder
 		shutil.move(imgname,imgfolder)
-		print(imgcontent)
-
+		
 		if tblcolcounter == 0:
 			tblrow += '<td><img src="img/'+imgname+'"/></td>'	
 		elif tblcolcounter == 4:
@@ -39,7 +38,6 @@ for row in txtfile:
 			tblcolcounter = 0
 		else:
 			tblrow += '<td><img src="img/'+imgname+'"/></td>'		
-		print(tblcolcounter)
 
 	tblcolcounter += 1
 	counter +=1
@@ -54,6 +52,5 @@ snippet_file = open('output.html','w')
 snippet_file.write(html_file)
 snippet_file.close();
 
-#print(html_file)
 print('hello')
 
