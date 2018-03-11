@@ -40,11 +40,21 @@ for row in txtfile:
 		else:
 			#tblrow  = ""
 			tblrow += '<td>'+imgname+'</td>'		
-		#print(tblrow)
 		print(tblcolcounter)
 
 	tblcolcounter += 1
 	counter +=1
-print(tblrow)
+
+html_file += img_table
+html_file += tblrow
+html_file += img_table_footer
+html_file += html_footer
+
+## WRITE THE HTML OUT PUT FILE
+snippet_file = open('output.html','w')
+snippet_file.write(html_file)
+snippet_file.close();
+
+#print(html_file)
 print('hello')
 
