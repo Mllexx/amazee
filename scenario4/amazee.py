@@ -52,5 +52,4 @@ snippet_file = open('output.html','w')
 snippet_file.write(html_file)
 snippet_file.close();
 
-print('hello')
 
