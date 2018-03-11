@@ -32,14 +32,13 @@ for row in txtfile:
 		print(imgcontent)
 
 		if tblcolcounter == 0:
-			tblrow += '<td>'+imgname+'</td>'	
+			tblrow += '<td><img src="img/'+imgname+'"/></td>'	
 		elif tblcolcounter == 4:
-			tblrow += '<td>'+imgname+'</td></tr>'
+			tblrow += '<td><img src="img/'+imgname+'"/></td></tr>'
 			tblrow += "<tr>"
 			tblcolcounter = 0
 		else:
-			#tblrow  = ""
-			tblrow += '<td>'+imgname+'</td>'		
+			tblrow += '<td><img src="img/'+imgname+'"/></td>'		
 		print(tblcolcounter)
 
 	tblcolcounter += 1
